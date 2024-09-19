@@ -1,0 +1,23 @@
+#PROGRAMMING EXERCISE 13: THE FAST FREIGHT SHIPPING COMPANY CHARGES THE FOLLOWING RATES: 2LBS OR LESS = $1.50 RATE PER POUND
+#OVER 2LBS BUT LESS THAN 6 POUNDS = $3.00 RATE PER POUND. OVER 6 LBS BUT NO MORE THAN 10LBS = $ 4.00 OVER 10LBS = $4.75
+#WRITE A PROGRAM THAT ASKS THE USER TO ENTER THE WEIGHT FO A PACKAGE THEN DISPLAYS THE SHIPPING CHARGES
+
+#ASK FOR USER INPUT
+package_weight= float(input("Please enter the weight of your package: "))
+
+if package_weight <= 2:
+      rate= 1.50
+elif package_weight > 2 and package_weight <= 6:
+      rate= 3.00
+elif package_weight > 6 and package_weight <= 10:
+      rate= 4.00
+else:
+      rate= 4.75
+
+#CALCULATE TOTAL RATE AND CHARGE
+shipping_rate= package_weight * rate
+total_shipping_charge= (package_weight * rate) + shipping_rate
+#DISPLAY THE TOTAL AMOUNTS
+print (f"Your total rate charge is: ${shipping_rate: .2f}")
+print (f"Your total shipping is: ${total_shipping_charge: .2f}")
+

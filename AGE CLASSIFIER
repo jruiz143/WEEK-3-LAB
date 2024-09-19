@@ -1,0 +1,15 @@
+#WRITE A PROGRAM THAT ASKS THE USER TO ENTER A PERSON'S AGE. THE PROGRAM SHOULD DISPLAY A MESSAGE INDICATING 
+#WHETHER THE PERSON IS AN INFANT, A CHILD, A TEENAGER, OR AN ADULT BASED ON THE FOLLOWING GUIDELINES:
+#IF PERSON IS 1 YR OLD OR LESS, THEY ARE AN INFANT, IF PERSON > 1, BUT < THAN 13, THEY ARE CHILD. IF PERSON
+#IS AT LEAST 13 YEARS OLD, BUT LESS THAN 20 YEARS OLD, THEY ARE A TEENAGER. IF PERSON 20YR THEY ARE ADULT
+
+#Ask for user input.
+age= int(input("Please enter your age: "))
+if age <= 1:
+      print ("You are an infant!")
+elif age > 1 and age < 13:
+      print ("You are a child!")
+elif age >= 13 and age < 20:
+      print ("You are a teenager!")
+elif age >= 20:
+      print ("You are an adult!")

@@ -1,0 +1,42 @@
+#PROGRAMMING EXERCISE 9:
+#ON A ROULETE WHEEL, THE POCKETS ARE NUMBERED FROM 0 TO 36. THE COLORS ARE: POCKET 0 = GREEN. FOR POCKETS 1-10, THE ODD
+#NUMBERED POCKETS ARE RED AND THE EVEN-NUMBERED POCKETS ARE BLACK. FOR POCKETS 11-18, THE ODD-NUMBERED POCKETS ARE BLACK
+#AND THE EVEN NUMBERED POCKETS ARE RED. FOR POCKETS 19-28, THE ODD-NUMBERED ARE RED AND THE EVEN ARE BLACK. FOR POCKETS 29-36
+#THE ODD-NUMBERED POCKETS ARE BLACK, AND THE EVEN ARE RED.DISPLAY WHETHER POCKET IS GREEN, RED, OR BLACK. ERROR MESSAGE IF NOT
+
+#ASK USER TO ENTER A POCKET NUMBER:
+pocketNumber= int(input("Please enter a pocket number (0-36): "))
+#Define the pocket numbers colors
+if pocketNumber >= 0 and pocketNumber <= 36:
+   if pocketNumber == 0:
+            pocketColor = "GREEN"
+   elif pocketNumber >=1 and pocketNumber <=10:
+         if pocketNumber %2 == 0:
+               pocketColor = "RED"
+         else: 
+               pocketColor ="BLACK"
+   elif pocketNumber >= 11 and pocketNumber <=18:
+         if pocketNumber % 2== 0:
+               pocketColor = "RED"
+         else: 
+               pocketColor= "BLACK"
+   elif pocketNumber >=19 and pocketNumber <= 28:
+         if pocketNumber % 2 == 0:
+               pocketColor = "BLACK"
+         else:
+               pocketColor = "RED"
+   elif pocketNumber >= 29 and pocketNumber <= 36:
+         if pocketNumber % 2 == 0:
+               pocketColor = "RED"
+         else: 
+               pocketColor ="BLACK"
+   print ("The Pocket Number Color is:", pocketColor)
+else:
+      print ("ERROR: THE NUMBER INPUTTED IS INVALID!!! PLEASE PICK A NUMBER (0-36)")
+
+            
+
+
+
+
+

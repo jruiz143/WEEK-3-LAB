@@ -1,0 +1,36 @@
+#PROGRAMMING EXERCISE 14: WRITE A PROGRAM THAT ASKS THE USER TO ENTER THE AMOUNT OF SECONDS AND WORKS AS FOLLOWS:
+#THERE ARE 60S IN A MINUTE. IF SECONDS ENTERED GREATER THAN OR EQUAL TO 60, THE PROGRAM SHOULD CONVERT THE # OF SECONDS TO
+#MINUTES AND SECONDS. THERE ARE 3,600 SECONDS IN AN HOUR. IF THE # OF SECS ENTERED IS GREATER THAN 3,600 THE PROGRAM SHOULD
+#CONVERT THE NUMBER OF SECONDS TO HOURS, MINUTES, AND SECONDS. THERE ARE 86,400 SECS IN A DAY. IF THE # ENTERED IS GREATER
+#THAN OR EQUAL TO 86,400 THE PROGRAM SHOULD CONVERT # OF SECONDS TO DAYS, HOURS, MINUTES, AND SECONDS
+
+#ASK THE USER FOR INPUT
+seconds_entered = int(input("Please enter a number of seconds: "))
+#DEFINE MINUTE, HOUR, AND DAYS
+minute= 60
+hour= 3600
+day= 86400
+
+#CONVERT THE NUMBER OF SECONDS ENTERED
+if seconds_entered >= minute:
+      minutes = seconds_entered // minute #calculate the amount of minutes from seconds
+      seconds = seconds_entered % minute #check remaining seconds
+      print (f"This is {minutes} minute(s) and {seconds} second(s)!")
+elif seconds_entered >= hour:
+      hours = seconds_entered // hour #calculate the hours from 60secs
+      remaining_seconds= seconds_entered % hour #calculate the remaining 
+      minutes = remaining_seconds// minute
+      seconds= remaining_seconds % minute
+      print (f"This is {hours} hour(s), {minutes} minute(s), and {seconds} second(s)")
+elif seconds_entered >= day:
+      days = seconds_entered // day
+      remaining_seconds = seconds_entered % day
+      hours = seconds_entered // hour
+      remaining_seconds= seconds_entered % hour
+      minutes = remaining_seconds// minute
+      seconds= remaining_seconds % minute
+      print (f"This is {days} day(s), {hours} hour(s), {minutes} minute(s), and {seconds} second(s)")
+else:
+      print (f"This is {seconds_entered} second(s)")
+
+

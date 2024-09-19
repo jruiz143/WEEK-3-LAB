@@ -1,0 +1,26 @@
+#PROGRAMMING EXERCISE 1
+#Write a program that asks the user for a number in the range of 1 through 7
+#The program should display the corresponding day of the week, where 1= Monday, 2= Tuesday, etc.
+#The program should display an error message if the user enters a number that is outside the range of 1-7
+
+ #Ask for user input
+number_selected = int(input ('Enter a number between 1-7: '))
+ #Display outcome
+if number_selected == 1:
+      print ("They day is Monday!")
+elif number_selected == 2:
+      print ("The day is Tuesday!")
+elif number_selected == 3:
+      print ("The day is Wednesday!")
+elif number_selected == 4:
+      print ("The day is Thursday!")
+elif number_selected == 5:
+      print ("The day is Friday!")
+elif number_selected == 6:
+      print ("The day is Saturday!")
+elif number_selected == 7:
+      print ("The day is Sunday!")
+else :
+      print ("Error: That is an invalid number")
+
+     

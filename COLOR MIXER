@@ -1,0 +1,18 @@
+#PROGRAMMING EXERCISE 7: WHEN YOU MIX TWO PRIMARY COLORS, YOU GET A SECONDARY COLOR: RED & BLUE = PURPLE,
+# RED AND YELLOW = ORANGE, BLUE AND YELLOW = GREEN. DESIGN A PROGRAM FOR USER INPUT OF TWO PRIMARY COLORS TO MIX.
+#OTHERWISE, THE PROGRAM SHOULD DISPLAY THE NAME THE SECONDARY COLOR THAT RESULTS
+
+#Ask user to enter the names of two primary colors to mix
+primary1= input("Let's Mix some colors! Please enter the first primary color (blue,red, or yellow): ")
+primary2= input ("Good job! Choose a different primary color to mix: ")
+if ( primary1 == "blue" and primary2 == "red") or (primary1 == "red" and primary2 == "blue" ):
+      print (f" {primary1} mixed with {primary2} creates purple!" )
+elif (primary1 == "red" and primary2 == "yellow" or primary1 == "yellow" and primary2 == "red"):
+      print (f"{primary1} mixed with {primary2} creates orange!")
+elif (primary1 == "blue" and primary2 == "yellow" or primary1 == "yellow" and primary2 == "blue"):
+      print (f"{primary1} mixed with {primary2} creates green!")
+else:
+      print ("Error! Invalid colors selected!")
+
+
+

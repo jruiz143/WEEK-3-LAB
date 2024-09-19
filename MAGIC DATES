@@ -1,0 +1,14 @@
+#PROGRAMMING EXERCISE 6: DESIGN A PROGRAM THAT ASKS THE USER TO ENTER A MONTH (IN NUMERIC FORM), A DAY, AND A TWO-DIGIT
+#YEAR. THE PROGRAM SHOULD THEN DETERMINE WHETHER THE MONTH X THE DAY EQUALS THE YEAR. IF SO, DISPLAY "THE DATE IS MAGIC"
+#OTHERWISE, DISPLAY "IT IS NOT MAGIC"
+
+#ASK FOR USER TO ENTER MONTH
+month= int(input("Please enter month in numeric form (1-12): "))
+day= int(input ("Please enter a day of the month (1-31): "))
+year= int (input("Please enter the last two digits of the year: "))
+#Format the if-else statement
+magic= month * day
+if year == magic:
+      print ("THE DATE IS MAGIC!")
+else:
+      print ("THE DATE IS NOT MAGIC!")

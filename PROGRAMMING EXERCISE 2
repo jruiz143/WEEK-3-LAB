@@ -1,0 +1,18 @@
+#WRITE A PROGRAM THAT ASKS FOR THE LENGTH AND WIDTH OF 2 rectangle. THE PROGRAM SHOULD
+#TELL THE USER WHICH RECTANGLE HAS THE GREATER AREA, OR IF THE AREA, OR AREAS ARE THE SAME
+
+#Asks the user for length and width of rectangles
+rectangle_1_width= int( input("Please enter the width of rectangle 1: "))
+rectangle_1_length= int(input ("Please enter the length of rectangle 1:"))
+rectangle_2_width= int (input("Please enter the width of rectangle 2: "))
+rectangle_2_length= int (input("Please enter the length of rectangle 2: "))
+#Calculate the areas of both rectangles
+area1= rectangle_1_length * rectangle_1_width
+area2= rectangle_2_length * rectangle_2_width
+#Define which rectangle has the greater area
+if area1 > area2:
+      print ('Rectangle 1 has the greater area.')
+elif area2> area1:
+      print ('Rectangle 2 has the greater area')
+else: 
+      print('Both have the same area.')

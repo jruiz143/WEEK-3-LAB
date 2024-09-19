@@ -1,0 +1,22 @@
+#PROGRAMMING EXERCISE 15 : THE MONTH OF FEB HAS 28 DAYS. LEAP YEAR IS 29 DAYS. WRITE A PROGRAM THAT ASK THE USER
+#TO ENTER A YEAR. THEN DISPLAY THE NUMBER OF DAYS IN FEB THAT YEAR. USE THE FOLLOWING:
+#DETERMINE IF THE YEAR IS DIVISIBLE BY 100. IF IT IS, THEN IT IS A LEAP YEAR IF AND ONLY IF IT IS ALSO DIVISIBLE BY 400.
+#IF THE YEAR IS NOT DIVISIBLE BY 100,THEN IT IS A LEAP YEAR IF AND ONLY IF IT IS DIVISBLE BY 4. FOR EXAMPLE, 2008 IS A LEAP 
+#YEAR BUT 2009 IS NOT.
+
+#ASK USER FOR INPUT:
+year= int(input("Enter a year: "))
+
+#CALCULATE LEAP YEAR
+if year % 100 == 0:
+      if year % 400 ==0:
+            print (f"In {year} February has 29 days!")
+      else:
+            print(f"In {year} February has 28 days!")
+elif year % 4 == 0:
+      print (f"In {year} February has 29 days!")
+else:
+      print(f"In {year} February has 28 days!")
+
+
+

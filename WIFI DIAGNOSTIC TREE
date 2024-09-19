@@ -1,0 +1,32 @@
+#PROGRAMMING EXERCISE 16: USE THE FLOWCHART TO CREATE A PROGRAM THAT LEADS A PERSON THROUGH A SERIES OF STEPS OF FIXING A
+#BAD WIFI CONNECTION. 
+
+print ("Reboot the computer and try to connect!\n (y/n) ENTER 'Y' FOR YES OR 'N' FOR NO")
+#ASK FOR USER ANSWER
+user_answer = input("Did that fix the problem? ")
+#SET UP TREE
+if user_answer == "Y" or user_answer == "y" or user_answer == "n" or user_answer == "N":
+    if user_answer == "n" or user_answer == "N":
+        print("Reboot the router and try to connect!")
+        user_answer = input("Did that fix the problem? ")
+
+        if user_answer == "Y" or user_answer == "y" or user_answer == "n" or user_answer == "N":
+            if user_answer == "n" or user_answer == "N":
+                print("Make sure the cables between the router & modem are plugged in firmly!")
+                user_answer = input("Did that fix the problem? ")
+
+                if user_answer == "Y" or user_answer == "y" or user_answer == "n" or user_answer == "N":
+                    if user_answer == "n" or user_answer == "N":
+                        print("Move the router to a new location and try to connect!")
+                        user_answer = input("Did that fix the problem? ")
+
+                        if user_answer == "Y" or user_answer == "y" or user_answer == "n" or user_answer == "N":
+                            print("Get a new router!")
+                        else:
+                            print("Please enter 'Y' for yes or 'N' for no.\n Rerun program and try again.")
+                else:
+                    print("Please enter 'Y' for yes or 'N' for no.\n Rerun program and try again.")
+        else:
+            print("Please enter 'Y' for yes or 'N' for no.\n Rerun program and try again.")
+else:
+    print("Please enter 'Y' for yes or 'N' for no.\n Rerun program and try again.")

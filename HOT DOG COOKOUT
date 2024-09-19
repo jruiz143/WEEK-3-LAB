@@ -1,0 +1,27 @@
+#PROGRAMMING EXECISE 8: ASSUME HOT DOGS COME IN PACKAGE OF 8, AND HOT DOG BUNS IN PACKAGES OF 10.
+# WRITE A PROGRAM THAT CALCULATES THE NUMBER OF PACKAGES OF HOT DOGS (AND BUNS)
+# NEEDED FOR A COOKOUT W/ MINIMUM AMOUNT OF LEFTOVERS. PROGRAM SHOULD DISPLAY: MINIMUM # OF HOT DOG PACKAGES,
+# MINIMUM # OF HOT DOG BUNS, AND LEFTOVER HOT DOG BUNS
+
+#ASK THE USER FOR THE NUMBER OF PEOPLE ATTENDING THE COOKOUT
+people= int(input("Please enter the number of people attending the cookout: "))
+#ASK THE USER THE NUMBER OF HOT DOGS EACH PERSON WILL BE GIVEN
+hotDogsPerPerson= int(input("Please enter the number of hot dogs each person will be given: "))
+#Hot dog packages come in 10, hot dog buns come in 8. Assign variables
+hotDogPackages= 10
+hotDogBunPackages= 8
+#CALCULATE THE TOTAL NUMBER OF HOT DOGS NEEDED
+totalHotDogs= people * hotDogsPerPerson
+#CALCULATE THE TOTAL MIN OF HOTDOGS/HOTDOG BUNS NEEDED
+minimumHotDogsPackages= totalHotDogs//hotDogPackages
+if totalHotDogs % hotDogPackages != 0: #INCLUDED REMAINDER TO ADD EXTRA PACKAGE TO MAKE NUMBERS EVEN
+      hotDogPackages += 1
+minimumHotDogBunPackages= totalHotDogs//hotDogBunPackages
+if totalHotDogs % hotDogBunPackages != 0: #USED REMAINDER TO ADD EXTRA PACKAGE TO KEEP NUMBERS EVEN
+      hotDogBunPackages += 1
+#calculate the remainder of buns
+remainderHotDogBuns= (hotDogBunPackages * minimumHotDogBunPackages)- totalHotDogs
+#DISPLAY THE CALCULATIONS
+print (f"The minimum number of Hot Dog packages needed is: {minimumHotDogsPackages}")
+print (f"The minimum number of Hot Dog Bun packages needed is: {minimumHotDogBunPackages}")
+print (f"The remaining hot dog buns is: {remainderHotDogBuns}")

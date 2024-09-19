@@ -1,0 +1,19 @@
+#PROGRAMMING EXERCISE 11: SEREDIPITY BOOKSELLERS HAS A BOOK CLUB THAT AWARDS POINTS TO ITS CUSTOMERS BASED
+#ON THE # OF BOOKS PURCHASED EACH MONTH. POINTS AWARDED ARE AS FOLLOWS: IF A CUSTOMER PURCHASES 0 BOOKS, THEY EARN 0 POINTS.
+#IF A CUSTOMER PURCHASES 2 BOOKS, THEY EARN 5PTS. IF A CUSTOMER PURCHASES 4 BOOKS, THEY EARN 15 PTS. IF A CUSTOMER PURCHASES
+#6 BOOKS, THEY EAR 30 PTS. IF A CUSTOMER PURCHASES 8 BOOKS, THEY EARN 60 PTS. 1)WRITE A PROGRAM THAT ASKS THE USER
+#TO ENTER THE # OF BOOKS THEY PURCHASED THIS MONTH. 2) THEN DISPLAY POINTS AWARDED
+
+#ASK USER FOR INPUT
+books_purchased = int (input("Please enter the amount of books purchased this month: "))
+#DEFINE PT SYSTEM
+if books_purchased == 0 or books_purchased <= 1:
+      print ("O pts have been awarded!")
+elif books_purchased >= 2 and books_purchased <= 5:
+      print ("2 pts have been awarded!")
+elif books_purchased >= 6 and books_purchased <= 7:
+      print ("30 pts have been awarded!")
+elif books_purchased >=8:
+      print ("60 pts have been awarded!")
+else:
+      print ("ERROR! INVALID INPUT! PLEASE ENTER A WHOLE NUMBER!")

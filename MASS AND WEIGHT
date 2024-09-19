@@ -1,0 +1,14 @@
+#IF YOU KNOW THE THE AMOUNT OF MASS AN OBJECT IN KILOGRAMS, YOU CAN CALCULATE ITS WEIGHT IN NEWTONS
+#WITH THE FOLLOWING FORMULA: WEIGHT=MASSX9.8
+#WRITE A PROGRAM THAT ASKS THE USER TO ENTER AN OBJECT'S MASS, THEN CALCULATES ITS WEIGHT. IF THE OBJECT WEIGHS MORE THAN
+#500 NEWTWONS, DISPLAY THAT IT IS TOO HEAVY. IF LESS, DISPLAY IT IS TOO LIGHT
+
+#Ask for user input
+mass= float(input("Please enter the object's mass: "))
+weight= mass * 9.8
+if weight >= 500:
+      print ("The object is too heavy!")
+elif weight < 100:
+      print ("The object is too small!")
+else:
+      print (f"The object's weight is: {weight: .2f} newtons")

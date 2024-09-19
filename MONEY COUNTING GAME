@@ -1,0 +1,32 @@
+#PROGRAMMING EXERCISE 10: CREATE A CHANGE-COUNTING GAME THAT GETS THE USER TO ENTER THE NUMBER OF COINS
+#REQUIRED TO MAKE EXACTLY ONE DOLLAR. THE PROGRAM SHOULD 1)PROMPT THE USER TO ENTER THE # OF PENNIES, NICKELS, 
+#& QUARTERS. IF THE TOTAL VALUE OF THE COINS ENTERED IS EQUAL TO ONE DOLLAR 2) THE PROGRAM SHOULD CONGRATULATE THE USER FOR
+#WINNING THE GAME. OTHERWISE THE PROGRAM SHOULD DISPLAY A MESSAGE INDICATING THE AMOUNT ENTERED WAS > OR < A DOLLAR.
+
+#Define variables
+penny= .01
+nickel= .05
+quarter= .25
+dollar= 1.00
+
+#PROMPT THE USER TO ENTER # OF PENNIES, NICKELS, QUARTERS
+userPennies= int(input("Please enter the amount of Pennies you have: "))
+userNickels= int (input ("Please enter the amout of Nickels you have: "))
+userQuarters= int(input ("Please enter the amount of Quarters you have: "))
+
+#CALCULATE THE TOTAL AMOUNT OF COINS USER HAS
+totalPennyAmount= userPennies * penny
+totalNickelAmount= userNickels * nickel
+totalQuarterAmount= userQuarters * quarter
+#CALCULATE TOTAL
+totalCoinAmount= float(totalPennyAmount+ totalNickelAmount + totalQuarterAmount)
+
+#DISPLAY OUTCOMES
+if totalCoinAmount == dollar:
+      print ("CONGRATULATIONS! YOU WON THE GAME!")
+else:
+      if totalCoinAmount > dollar:
+            print (f" You lost! Your total amount is ${totalCoinAmount: .2f}, which is greater than a dollar!")
+      else:
+            print (f"You lost! Your total amount is ${totalCoinAmount: .2f}, which is less than a dollar!")
+

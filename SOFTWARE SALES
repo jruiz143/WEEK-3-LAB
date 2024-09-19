@@ -1,0 +1,37 @@
+#PROGRAMMING EXERCISE 12: A SOFTWARE COMPANY SELLS A PACKAGE THAT RETAILS FOR $99. QUANTITY DISCOUNTS ARE GIVEN AS:
+# 10-19 EQUALS 10 PERCENT. 20-49 EQUALS 20 PERCENT. 50-99 EQUALS 30 PERCENT. 100 OR MORE EQUALS 40 PERCENT.
+#WRITE A PROGRAM THAT ASKS THE USER TO ENTER THE AMOUNT OF PACKAGES PURCHASED. DISPLAY THE AMOUNT OF THE DISCOUNT
+#(IF ANY) AND THE TOTAL AMOUNT OF THE PURCHASE AFTER THE DISCOUNT.
+
+#ASK FOR USER INPUT
+packages_purchased = int(input("Please Enter the Amount of Packages Purchased: "))
+#DEFINE PRICE
+package_price = 99
+
+#SET DISCOUNT RATES
+if packages_purchased >= 100:
+      discount_rate= .40
+elif packages_purchased >= 50:
+      discount_rate= .30
+elif packages_purchased >= 20:
+      discount_rate= .20
+elif packages_purchased >= 10:
+      discount_rate= .10
+else: 
+      discount_rate= 0
+
+#CALCULATE DISCOUNT
+discount_amount= package_price *packages_purchased * discount_rate
+total_amount= (package_price * packages_purchased ) - discount_amount
+
+#DISPLAY OUTPUT
+
+if discount_rate > 0:
+    print(f"A discount of ${discount_amount:.2f} was applied.")
+else:
+    print("No discount was applied.")
+
+#DISPLAY TOTAL
+print (f"Your total amount is: ${total_amount: .2f} after discount.")
+
+
